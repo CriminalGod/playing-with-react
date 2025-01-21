@@ -1,0 +1,22 @@
+React.createElement(type, props, children)
+ReactDOM.createRoot(container, options).render(element, container, callback)
+
+add npm to our workspace -- npm init -> it create package.json, so you can install packages
+npm install -D parcel  -> -D is denotes it as Dev dependency
+
+bundler - to bundle all html, css, js files
+Known Bundlers - WebPack, Parcel, Vite, etc.
+
+-dev build
+-local server
+-HMR (Hot Module Replacement)
+-file watching Algorithm
+-caching-faster builds
+-minification
+-bundling
+-consistent hashing
+
+
+^ upgrades minor version only
+~ upgrades major version
+
