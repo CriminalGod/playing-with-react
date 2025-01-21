@@ -20,3 +20,7 @@ Known Bundlers - WebPack, Parcel, Vite, etc.
 ^ upgrades minor version only
 ~ upgrades major version
 
+JSX -> HTML like syntax
+babel -> Javascript Compiler. It conversts JSX to JS
+
+Component Composition -> the process of combining smaller, reusable components to build more complex UI elements or applications
