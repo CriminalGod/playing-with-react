@@ -23,4 +23,8 @@ Known Bundlers - WebPack, Parcel, Vite, etc.
 JSX -> HTML like syntax
 babel -> Javascript Compiler. It conversts JSX to JS
 
-Component Composition -> the process of combining smaller, reusable components to build more complex UI elements or applications
+Component Composition -> the process of combining smaller, reusable components to build more complex UI elements or applications.
+
+>> uniqueid as key is best practice; using indexes as keys is last resort. 
+unique key from backend >>>>> index as a key >>>>> not using keys (not acceptable...) 
+
