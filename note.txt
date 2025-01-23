@@ -33,3 +33,7 @@ whenever a state variable updates, React re-renders the component.
 Reconciliation Algorithm (React Fiber)
 DOM
 VirtualDOM is representation of actual DOM
+Diff Algorithm
+
+
+Conditional Rendering -> Rendering based on condition

@@ -1,11 +1,31 @@
-import { useState } from "react";
-import { resList } from "../utils/mockData";
+import { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
+import Shimmer from "./Shimmer";
 
 const Body = () => {
-  const [listOfRestaurants, setListOfRestaurants] = useState(resList);
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
-  return (
+  useEffect(() => {
+    fetchRestaurantData();
+  }, []);
+
+  const fetchRestaurantData = async () => {
+    const data = await fetch("http://localhost:8080/restaurantList");
+    const json = await data.json();
+    console.log(json);
+    setTimeout(() => {
+      setListOfRestaurants(json);
+    }, 2000);
+  };
+
+  // // Conditional Rendering -> Rendering based on condition
+  // if (listOfRestaurants.length === 0) {
+  //   return <Shimmer />;
+  // }
+
+  return listOfRestaurants.length === 0 ? (
+    <Shimmer />
+  ) : (
     <div className="body">
       <div className="filter">
         <button
