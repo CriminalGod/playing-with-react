@@ -68,10 +68,11 @@ body {
 .filter {
   padding: 5px;
   margin: 5px;
+  display: flex;
 }
 
 .filter-btn {
-  padding: 5px;
+  padding: 10px;
 }
 
 .shimmer-filter {
@@ -99,4 +100,22 @@ body {
   margin: 10px;
   border-radius: 10px;
   background-color: #98939336;
+}
+
+.login-btn {
+  padding: 0 15px;
+}
+
+.search-container {
+  width: 20%;
+}
+
+.search-box {
+  padding: 2px;
+  margin: 5px;
+}
+
+.search-btn {
+  padding: 10px;
+  margin: 10px;
 }

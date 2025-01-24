@@ -28,7 +28,7 @@ Component Composition -> the process of combining smaller, reusable components t
 >> uniqueid as key is best practice; using indexes as keys is last resort. 
 unique key from backend >>>>> index as a key >>>>> not using keys (not acceptable...) 
 
-whenever a state variable updates, React re-renders the component.
+whenever a state variable updates, React triggers reconciliation cycleI (re-renders the component).
 
 Reconciliation Algorithm (React Fiber)
 DOM
@@ -37,3 +37,5 @@ Diff Algorithm
 
 
 Conditional Rendering -> Rendering based on condition
+
+
