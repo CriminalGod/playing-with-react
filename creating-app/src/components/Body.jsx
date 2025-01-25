@@ -1,20 +1,24 @@
 import { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
+import { Link } from "react-router-dom";
+import { API_URL } from "../utils/constants";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
   const [filteredRestaurantList, setfilteredRestaurantList] = useState([]);
   const [searchText, setSearchText] = useState("");
 
-  console.log("rendered");
+  console.log("Body rendered....");
 
   useEffect(() => {
+    console.log("Body useEffect...");
+    
     fetchRestaurantData();
   }, []);
 
   const fetchRestaurantData = async () => {
-    const data = await fetch("http://localhost:8080/restaurantList");
+    const data = await fetch(API_URL);
     const json = await data.json();
     // setTimeout(() => {
     setListOfRestaurants(json);
@@ -69,7 +73,12 @@ const Body = () => {
       </div>
       <div className="res-container">
         {filteredRestaurantList.map((restaurant) => (
-          <RestaurantCard resObj={restaurant} key={restaurant.data.id} />
+          <Link
+            key={restaurant.data.id}
+            to={"/restaurants/" + restaurant.data.id}
+          >
+            <RestaurantCard resObj={restaurant} />
+          </Link>
         ))}
       </div>
     </div>

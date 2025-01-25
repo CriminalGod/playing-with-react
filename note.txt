@@ -39,3 +39,24 @@ Diff Algorithm
 Conditional Rendering -> Rendering based on condition
 
 
+useEffect(()=> {}) >> If no dependency array present >> useEffect get called on every render.
+useEffect(() => {}, []) >> If dependency array is empty >> useEffect get called on initial render only (just once).
+useEffect(() => {}, [btnName]) >> If dependency array is [btnName] >> useEffect get called everytime btnName is updated.
+
+
+React Router DOM
+
+const appRouter = createBrowserRouter([])
+<RouterProvider router={appRouter} />
+
+
+2 types of routing in web apps
+- client side routing
+- server side routing
+
+
+Hooks
+- useState(null); -- useState<T>(initialState: T | (() => T)): [T, React.Dispatch<React.SetStateAction<T>>]
+- useEffect(()=> {}, []); -- useEffect(effect: React.EffectCallback, deps?: React.DependencyList): void
+- useRouteError(); -- useRouteError(): unknown
+- useParams(); -- useParams<string>(): Readonly<Params<string>>

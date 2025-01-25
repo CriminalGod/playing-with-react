@@ -1,78 +1,120 @@
 {
     "restaurantList": [
-        {
-            "data": {
-                "id": "RES-MG-RUCHI",
-                "imgUrl": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1707211968/4be809a2e81c2e13d20167e5cdc1fedb.jpg",
-                "name": "Ruchi Dhaba",
-                "cuisines": [
-                    "Biryani",
-                    "Fried Rice",
-                    "Manchuria"
-                ],
-                "avgRating": 4.3,
-                "costForTwo": 40000,
-                "deliveryTime": 20
-            }
-        },
-        {
-            "data": {
-                "id": "RES-MG-SPICE",
-                "imgUrl": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1707211968/4be809a2e81c2e13d20167e5cdc1fedb.jpg",
-                "name": "Spice Hub",
-                "cuisines": [
-                    "North Indian",
-                    "Chinese",
-                    "Fast Food"
-                ],
-                "avgRating": 4.0,
-                "costForTwo": 35000,
-                "deliveryTime": 25
-            }
-        },
-        {
-            "data": {
-                "id": "RES-MG-TASTE",
-                "imgUrl": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1707211968/4be809a2e81c2e13d20167e5cdc1fedb.jpg",
-                "name": "Taste Treat",
-                "cuisines": [
-                    "South Indian",
-                    "Snacks"
-                ],
-                "avgRating": 4.5,
-                "costForTwo": 30000,
-                "deliveryTime": 15
-            }
-        },
-        {
-            "data": {
-                "id": "RES-MG-HAVELI",
-                "imgUrl": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1707211968/4be809a2e81c2e13d20167e5cdc1fedb.jpg",
-                "name": "Haveli Kitchen",
-                "cuisines": [
-                    "Punjabi",
-                    "Tandoori",
-                    "Biryani"
-                ],
-                "avgRating": 4.2,
-                "costForTwo": 45000,
-                "deliveryTime": 30
-            }
-        },
-        {
-            "data": {
-                "id": "RES-MG-ITALIANO",
-                "imgUrl": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1707211968/4be809a2e81c2e13d20167e5cdc1fedb.jpg",
-                "name": "Italiano",
-                "cuisines": [
-                    "Italian",
-                    "Pizza",
-                    "Pasta"
-                ],
-                "avgRating": 4.6,
-                "costForTwo": 50000,
-                "deliveryTime": 35
-            }
+      {
+        "data": {
+          "id": "RES-MG-RUCHI",
+          "imgUrl": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1707211968/4be809a2e81c2e13d20167e5cdc1fedb.jpg",
+          "name": "Ruchi Dhaba",
+          "cuisines": ["Biryani", "Fried Rice", "Manchuria"],
+          "avgRating": 4.3,
+          "costForTwo": 40000,
+          "deliveryTime": 20,
+          "items": [
+            { "itemId": "ITEM001", "itemName": "Dum Biryani", "itemPrice": 13000 },
+            { "itemId": "ITEM002", "itemName": "Egg Fried Rice", "itemPrice": 10000 },
+            { "itemId": "ITEM003", "itemName": "Chicken Manchuria", "itemPrice": 15000 },
+            { "itemId": "ITEM004", "itemName": "Paneer Butter Masala", "itemPrice": 12000 },
+            { "itemId": "ITEM005", "itemName": "Veg Biryani", "itemPrice": 11000 },
+            { "itemId": "ITEM006", "itemName": "Chicken 65", "itemPrice": 14000 },
+            { "itemId": "ITEM007", "itemName": "Gobi Manchuria", "itemPrice": 11000 },
+            { "itemId": "ITEM008", "itemName": "Mutton Curry", "itemPrice": 20000 },
+            { "itemId": "ITEM009", "itemName": "Butter Naan", "itemPrice": 4000 },
+            { "itemId": "ITEM010", "itemName": "Chicken Lollipop", "itemPrice": 15000 }
+          ]
         }
+      },
+      {
+        "data": {
+          "id": "RES-MG-SPICE",
+          "imgUrl": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1707211968/4be809a2e81c2e13d20167e5cdc1fedb.jpg",
+          "name": "Spice Hub",
+          "cuisines": ["North Indian", "Chinese", "Fast Food"],
+          "avgRating": 4.0,
+          "costForTwo": 35000,
+          "deliveryTime": 25,
+          "items": [
+            { "itemId": "ITEM101", "itemName": "Chicken Tikka", "itemPrice": 15000 },
+            { "itemId": "ITEM102", "itemName": "Paneer Tikka", "itemPrice": 12000 },
+            { "itemId": "ITEM103", "itemName": "Hakka Noodles", "itemPrice": 10000 },
+            { "itemId": "ITEM104", "itemName": "Veg Spring Rolls", "itemPrice": 8000 },
+            { "itemId": "ITEM105", "itemName": "Chilli Chicken", "itemPrice": 14000 },
+            { "itemId": "ITEM106", "itemName": "Dal Makhani", "itemPrice": 9000 },
+            { "itemId": "ITEM107", "itemName": "Garlic Naan", "itemPrice": 5000 },
+            { "itemId": "ITEM108", "itemName": "Butter Chicken", "itemPrice": 17000 },
+            { "itemId": "ITEM109", "itemName": "Tandoori Roti", "itemPrice": 3000 },
+            { "itemId": "ITEM110", "itemName": "Egg Rolls", "itemPrice": 12000 }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "RES-MG-TASTE",
+          "imgUrl": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1707211968/4be809a2e81c2e13d20167e5cdc1fedb.jpg",
+          "name": "Taste Treat",
+          "cuisines": ["South Indian", "Snacks"],
+          "avgRating": 4.5,
+          "costForTwo": 30000,
+          "deliveryTime": 15,
+          "items": [
+            { "itemId": "ITEM201", "itemName": "Masala Dosa", "itemPrice": 5000 },
+            { "itemId": "ITEM202", "itemName": "Idli Sambar", "itemPrice": 4000 },
+            { "itemId": "ITEM203", "itemName": "Medu Vada", "itemPrice": 3000 },
+            { "itemId": "ITEM204", "itemName": "Uttapam", "itemPrice": 6000 },
+            { "itemId": "ITEM205", "itemName": "Pongal", "itemPrice": 7000 },
+            { "itemId": "ITEM206", "itemName": "Upma", "itemPrice": 4000 },
+            { "itemId": "ITEM207", "itemName": "Rava Kesari", "itemPrice": 3500 },
+            { "itemId": "ITEM208", "itemName": "Filter Coffee", "itemPrice": 2000 },
+            { "itemId": "ITEM209", "itemName": "Bonda", "itemPrice": 4500 },
+            { "itemId": "ITEM210", "itemName": "Appam with Stew", "itemPrice": 9000 }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "RES-MG-HAVELI",
+          "imgUrl": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1707211968/4be809a2e81c2e13d20167e5cdc1fedb.jpg",
+          "name": "Haveli Kitchen",
+          "cuisines": ["Punjabi", "Tandoori", "Biryani"],
+          "avgRating": 4.2,
+          "costForTwo": 45000,
+          "deliveryTime": 30,
+          "items": [
+            { "itemId": "ITEM301", "itemName": "Paneer Tikka", "itemPrice": 15000 },
+            { "itemId": "ITEM302", "itemName": "Amritsari Kulcha", "itemPrice": 12000 },
+            { "itemId": "ITEM303", "itemName": "Chicken Biryani", "itemPrice": 16000 },
+            { "itemId": "ITEM304", "itemName": "Dal Tadka", "itemPrice": 10000 },
+            { "itemId": "ITEM305", "itemName": "Lassi", "itemPrice": 5000 },
+            { "itemId": "ITEM306", "itemName": "Butter Naan", "itemPrice": 4000 },
+            { "itemId": "ITEM307", "itemName": "Kadai Chicken", "itemPrice": 17000 },
+            { "itemId": "ITEM308", "itemName": "Tandoori Roti", "itemPrice": 3000 },
+            { "itemId": "ITEM309", "itemName": "Rajma Chawal", "itemPrice": 9000 },
+            { "itemId": "ITEM310", "itemName": "Aloo Paratha", "itemPrice": 8000 }
+          ]
+        }
+      },
+      {
+        "data": {
+          "id": "RES-MG-ITALIANO",
+          "imgUrl": "https://dineout-media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/v1707211968/4be809a2e81c2e13d20167e5cdc1fedb.jpg",
+          "name": "Italiano",
+          "cuisines": ["Italian", "Pizza", "Pasta"],
+          "avgRating": 4.6,
+          "costForTwo": 50000,
+          "deliveryTime": 35,
+          "items": [
+            { "itemId": "ITEM401", "itemName": "Margherita Pizza", "itemPrice": 20000 },
+            { "itemId": "ITEM402", "itemName": "Pepperoni Pizza", "itemPrice": 22000 },
+            { "itemId": "ITEM403", "itemName": "Fettuccine Alfredo", "itemPrice": 18000 },
+            { "itemId": "ITEM404", "itemName": "Penne Arrabbiata", "itemPrice": 16000 },
+            { "itemId": "ITEM405", "itemName": "Bruschetta", "itemPrice": 10000 },
+            { "itemId": "ITEM406", "itemName": "Tiramisu", "itemPrice": 12000 },
+            { "itemId": "ITEM407", "itemName": "Caesar Salad", "itemPrice": 9000 },
+            { "itemId": "ITEM408", "itemName": "Garlic Bread", "itemPrice": 5000 },
+            { "itemId": "ITEM409", "itemName": "Lasagna", "itemPrice": 20000 },
+            { "itemId": "ITEM410", "itemName": "Minestrone Soup", "itemPrice": 8000 }
+          ]
+        }
+      }
     ]
-}
+  }
+  

@@ -13,6 +13,16 @@ body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 }
 
+a {
+  all: unset;
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover, button:hover {
+  cursor: pointer;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -35,6 +45,12 @@ body {
 .nav-items > ul > li {
   padding: 5px;
   margin: 5px;
+  border: 1px solid transparent;
+}
+
+.nav-items > ul > li:hover {
+  border-color: #000;
+  background-color: #98939336;
 }
 
 .res-container {
@@ -42,8 +58,11 @@ body {
   flex-wrap: wrap;
 }
 
-.res-card {
+.res-container > a {
   width: 18.5%;
+}
+
+.res-card {
   height: 300px;
   padding: 10px;
   margin: 10px;
@@ -51,7 +70,6 @@ body {
 }
 
 .res-card:hover {
-  cursor: pointer;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.46);
 }
 
