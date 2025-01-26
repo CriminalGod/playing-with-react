@@ -60,3 +60,8 @@ Hooks
 - useEffect(()=> {}, []); -- useEffect(effect: React.EffectCallback, deps?: React.DependencyList): void
 - useRouteError(); -- useRouteError(): unknown
 - useParams(); -- useParams<string>(): Readonly<Params<string>>
+
+
+Two phases in Lifecycle
+- Render Phase
+- Commit Phase
