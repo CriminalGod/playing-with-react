@@ -11,7 +11,11 @@ class About extends Component {
   componentDidMount() {
     console.log("Parent componentDidMount");
   }
-  
+
+  componentWillUnmount() {
+    console.log("Parent umMounted");
+  }
+
   render() {
     console.log("Parent render");
     return (
@@ -22,7 +26,9 @@ class About extends Component {
         <User name="Rakesh Kumar (Funtion)" />
         <hr />
         <UserClass name="Rakesh Kumar (Class)" />
+        <hr />
         <UserClass name="CriminalGod (Class)" />
+        <hr />
         <UserClass name="Turner (Class)" />
       </div>
     );

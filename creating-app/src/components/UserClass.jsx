@@ -5,21 +5,42 @@ class UserClass extends Component {
   constructor(props) {
     super(props);
     console.log(props.name + " constructor");
-    
+
+    // this.timer = setInterval(() => {
+    //     console.log("timer");
+    // }, 1000)
+
     this.state = {
       count: 0,
       count1: 1,
+      userInfo: {
+        location: "Mogalthur",
+      },
     };
   }
 
   componentDidMount() {
     console.log(this.props.name + " componentDidMount");
-    
+  }
+
+  //   API CALL
+  //   async componentDidMount() {
+  //     const data = await fetch("https://api.github.com/users/CriminalGod");
+  //     const json = await data.json();
+  //     this.setState({
+  //       userInfo: json,
+  //     });
+  //     console.log(json);
+  //   }
+
+  componentWillUnmount() {
+    // clearInterval(this.timer);
+    console.log(this.props.name + " componentWillUnmount");
   }
 
   render() {
     console.log(this.props.name + " render");
-    
+
     const { name } = this.props;
     const { count, count1 } = this.state;
     return (
@@ -36,6 +57,7 @@ class UserClass extends Component {
           Increase Count
         </button>
         <h1>{name}</h1>
+        <h2>{this.state.userInfo.location}</h2>
         <p>This is a Class component</p>
       </div>
     );

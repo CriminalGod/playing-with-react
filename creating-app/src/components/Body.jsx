@@ -13,8 +13,13 @@ const Body = () => {
 
   useEffect(() => {
     console.log("Body useEffect...");
-    
+
     fetchRestaurantData();
+    // this return function get called when this function component get unmounted
+    return () => {
+      console.log("Body unmounted...");
+      
+    };
   }, []);
 
   const fetchRestaurantData = async () => {
