@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Header = () => {
   const [btnName, setBtnName] = useState(false);
@@ -8,6 +9,8 @@ const Header = () => {
   useEffect(() => {
     console.log("useEffect called in Header Component...");
   }, [btnName]);
+
+  const onlineStatus = useOnlineStatus();
 
   return (
     <div className="header">
@@ -20,6 +23,7 @@ const Header = () => {
       </Link>
       <div className="nav-items">
         <ul>
+          <li>Online Status: {onlineStatus ? "🟢" : "🔴"}</li>
           <li>
             <Link to="/">Home</Link>
           </li>

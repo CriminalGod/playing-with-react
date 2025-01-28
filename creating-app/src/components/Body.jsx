@@ -3,6 +3,7 @@ import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { API_URL } from "../utils/constants";
+import useOnlineStatus from "../utils/useOnlineStatus";
 
 const Body = () => {
   const [listOfRestaurants, setListOfRestaurants] = useState([]);
@@ -18,7 +19,6 @@ const Body = () => {
     // this return function get called when this function component get unmounted
     return () => {
       console.log("Body unmounted...");
-      
     };
   }, []);
 
@@ -30,6 +30,12 @@ const Body = () => {
     setfilteredRestaurantList(json);
     // }, 2000);
   };
+
+  const onlineStatus = useOnlineStatus();
+
+  if (onlineStatus === false) {
+    return <h1>Looks like you are offline, check your connection</h1>;
+  }
 
   // // Conditional Rendering -> Rendering based on condition
   // if (listOfRestaurants.length === 0) {

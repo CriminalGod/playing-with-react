@@ -3,11 +3,21 @@ import { createRoot } from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
 import App from "./App";
-import About from "./components/About";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import Body from "./components/Body";
 import RestaurantMenu from "./components/RestaurantMenu";
+import { lazy, Suspense } from "react";
+
+
+// chunking
+// code splitting
+// dynamic loading
+// lazy loading
+// on demand loading
+// dynamic import
+
+const About = lazy(() => import("./components/About"));
 
 const appRouter = createBrowserRouter([
   {
@@ -20,7 +30,7 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "/about",
-        element: <About />,
+        element: <Suspense fallback={<h1>Loading ...</h1>}> <About /></Suspense>,
       },
       {
         path: "/contact",
