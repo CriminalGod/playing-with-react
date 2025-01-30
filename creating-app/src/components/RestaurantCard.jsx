@@ -22,4 +22,19 @@ RestaurantCard.propTypes = {
   resObj: PropTypes.object.isRequired,
 };
 
+// Higher Order Component
+
+export const withPromotedLabel = (RestaurantCard) => {
+  const withLabel = (props) => {
+    return (
+      <div>
+        <label className="promoted-label">Promoted</label>
+        <RestaurantCard {...props}/>
+      </div>
+    );
+  };
+
+  return withLabel;
+};
+
 export default RestaurantCard;

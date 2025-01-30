@@ -9,6 +9,7 @@
           "avgRating": 4.3,
           "costForTwo": 40000,
           "deliveryTime": 20,
+          "isPromoted":false,
           "items": [
             { "itemId": "ITEM001", "itemName": "Dum Biryani", "itemPrice": 13000 },
             { "itemId": "ITEM002", "itemName": "Egg Fried Rice", "itemPrice": 10000 },
@@ -32,6 +33,7 @@
           "avgRating": 4.0,
           "costForTwo": 35000,
           "deliveryTime": 25,
+          "isPromoted":true,
           "items": [
             { "itemId": "ITEM101", "itemName": "Chicken Tikka", "itemPrice": 15000 },
             { "itemId": "ITEM102", "itemName": "Paneer Tikka", "itemPrice": 12000 },
@@ -55,6 +57,7 @@
           "avgRating": 4.5,
           "costForTwo": 30000,
           "deliveryTime": 15,
+          "isPromoted":true,
           "items": [
             { "itemId": "ITEM201", "itemName": "Masala Dosa", "itemPrice": 5000 },
             { "itemId": "ITEM202", "itemName": "Idli Sambar", "itemPrice": 4000 },
@@ -78,6 +81,7 @@
           "avgRating": 4.2,
           "costForTwo": 45000,
           "deliveryTime": 30,
+          "isPromoted":false,
           "items": [
             { "itemId": "ITEM301", "itemName": "Paneer Tikka", "itemPrice": 15000 },
             { "itemId": "ITEM302", "itemName": "Amritsari Kulcha", "itemPrice": 12000 },
@@ -101,6 +105,7 @@
           "avgRating": 4.6,
           "costForTwo": 50000,
           "deliveryTime": 35,
+          "isPromoted":true,
           "items": [
             { "itemId": "ITEM401", "itemName": "Margherita Pizza", "itemPrice": 20000 },
             { "itemId": "ITEM402", "itemName": "Pepperoni Pizza", "itemPrice": 22000 },

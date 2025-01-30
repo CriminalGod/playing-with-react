@@ -19,7 +19,8 @@ a {
   color: inherit;
 }
 
-a:hover, button:hover {
+a:hover,
+button:hover {
   cursor: pointer;
 }
 
@@ -136,4 +137,13 @@ a:hover, button:hover {
 .search-btn {
   padding: 10px;
   margin: 10px;
+}
+
+.promoted-label {
+  position: absolute;
+  background-color: #000;
+  color: #fff;
+  margin: 2px;
+  padding: 5px;
+  border-radius: 5px;
 }

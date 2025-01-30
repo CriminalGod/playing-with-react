@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import RestaurantCard from "./RestaurantCard";
+import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { API_URL } from "../utils/constants";
@@ -11,6 +11,8 @@ const Body = () => {
   const [searchText, setSearchText] = useState("");
 
   console.log("Body rendered....");
+
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
 
   useEffect(() => {
     console.log("Body useEffect...");
@@ -88,7 +90,11 @@ const Body = () => {
             key={restaurant.data.id}
             to={"/restaurants/" + restaurant.data.id}
           >
-            <RestaurantCard resObj={restaurant} />
+            {restaurant.data.isPromoted ? (
+              <RestaurantCardPromoted resObj={restaurant}/>
+            ) : (
+              <RestaurantCard resObj={restaurant} />
+            )}
           </Link>
         ))}
       </div>

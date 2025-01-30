@@ -65,3 +65,8 @@ Hooks
 Two phases in Lifecycle
 - Render Phase
 - Commit Phase
+
+
+>>> start json server: npx json-server --watch db.json --port 8080
+
+Higher Order Components
